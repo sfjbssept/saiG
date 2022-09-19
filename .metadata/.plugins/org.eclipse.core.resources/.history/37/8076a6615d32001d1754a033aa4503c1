@@ -1,0 +1,10 @@
+server.port=9090
+spring.datasource.url=jdbc:mysql://localhost:3306/product?useSSL=false
+
+spring.datasource.username=root
+spring.datasource.password=Gsai@540
+
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL80Dialect
+
+spring.jpa.hibernate.ddl-auto=update

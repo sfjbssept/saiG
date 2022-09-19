@@ -1,0 +1,28 @@
+package com.school.app.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+@RestController
+@RequestMapping("/schooldetail")
+public class SchoolServiceController {
+	
+	@Autowired
+	RestTemplate resetTemplate;
+	
+	public String getStude(@PathVariable String schoolname) {
+		String url = "http://localhost:9091/student/"+schoolname;
+		HttpHeaders http = new HttpHeaders();
+		HttpEntity<String> httpEntity = new HttpEntity<String>(http);
+		resetTemplate.exchange(url, HttpMethod.GET, httpEntity,String.class);
+		return schoolname;
+		
+	}
+
+}
