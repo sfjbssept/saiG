@@ -20,7 +20,7 @@ public class SchoolServiceController {
 	
 	@GetMapping("/getstudent/{schoolname}")
 	public String getStudent(@PathVariable String schoolname) {
-		String url = "http://localhost:9091/student/"+schoolname;
+		String url = "http://Student-Service/student/"+schoolname;
 		HttpHeaders http = new HttpHeaders();
 		HttpEntity<String> httpEntity = new HttpEntity<String>(http);
 		ResponseEntity<String> response = resetTemplate.exchange(url, HttpMethod.GET, httpEntity,String.class);
