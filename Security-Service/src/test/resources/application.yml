@@ -1,0 +1,13 @@
+employee:
+  get:
+    url: /get
+  put:
+    url: /put/{name}
+  post:
+    url: /post
+  delete:
+    url: /delete/{name}
+  userName: sai
+  userPwd: sai123
+  adminName: saiadmin
+  adminPwd: sai123
