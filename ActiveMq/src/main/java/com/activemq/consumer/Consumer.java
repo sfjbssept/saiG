@@ -9,6 +9,5 @@ public class Consumer {
 	@JmsListener(destination = "standalone-queue")
 	public void consume(String msg) {
 		System.out.println("Hi , it is consumed");
-		
 	}
 }
