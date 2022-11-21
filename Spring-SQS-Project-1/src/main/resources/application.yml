@@ -1,0 +1,13 @@
+server:
+  port: 8073
+  
+cloud:
+  aws:
+    region:
+      static: us-east-1
+      auto: false
+    credentials:
+      access-key: AKIA4MFLODBGNTMITOXR
+      secret-key: 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
+    end-point:
+      uri: https://sqs.us-east-1.amazonaws.com/850763061324/saisqs  
