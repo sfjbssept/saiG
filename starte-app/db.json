@@ -1,0 +1,11 @@
+{
+  "students": [
+    {
+      "firstname": "Sai",
+      "lastname": "G",
+      "age": 25,
+      "class1": 2,
+      "subject": "PCB"
+    }
+  ]
+}
